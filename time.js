@@ -289,7 +289,7 @@ time.ZonedDateTime.prototype.isBetweenTimes = function (start, end) {
 
   // time range spans midnight
   if (endTime.isBefore(startTime)) {
-    return currTime.isAfter(startTime) || currTime.isBefore(endTime);
+    return currTime.isAfter(endTime) || currTime.isBefore(startTime);
   } else {
     return currTime.isAfter(startTime) && currTime.isBefore(endTime);
   }
