@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>SystemTriggerConfig - Documentation</title>
+    <title>itemchannellink - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -34,7 +34,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">SystemTriggerConfig</h1>
+    <h1 class="page-title">itemchannellink</h1>
     
 
     
@@ -47,29 +47,72 @@
 <header>
     
         <h2>
-            <span class="ancestors"><a href="TriggerBuilder.html">TriggerBuilder</a>.</span>
+            <span class="ancestors"><a href="items.html">items</a><a href="items.metadata.html">.metadata</a>.</span>
         
-        SystemTriggerConfig
+        itemchannellink
         </h2>
-        
-            <div class="class-description usertext"><p>System based trigger</p></div>
         
     
 </header>
 
 <article>
     
+        <div class="container-overview">
+        
+            
+
+<dl class="details">
 
     
-        <h3 class="subsection-title">Extends</h3>
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line6">line 6</a>
+    </li></ul></dd>
+    
 
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+            
+                <div class="description usertext"><p>Item channel link namespace.
+This namespace provides access to Item channel links.</p></div>
+            
+
+            
         
-
-
-    <ul>
-        <li>TriggerConf</li>
-    </ul>
-
+        </div>
+    
 
     
 
@@ -93,7 +136,7 @@
 
     
 
-    <h4 class="name" id="rulesLoaded"><span class="type-signature"></span>rulesLoaded<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
+    <h4 class="name" id=".getItemChannelLink"><span class="type-signature">(static) </span>getItemChannelLink<span class="signature">(itemOrName, channelUID)</span><span class="type-signature"> &rarr; {Object|null}</span></h4>
 
     
 
@@ -105,7 +148,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line496">line 496</a>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -145,7 +188,7 @@
 
 
 <div class="description usertext">
-    <p>System trigger</p>
+    <p>Gets a channel link of from an Item.</p>
 </div>
 
 
@@ -156,6 +199,81 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>itemOrName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Item</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p><code>Item</code> or the name of the Item</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>channelUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -175,6 +293,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>the ItemChannelLink or <code>null</code> if none exists</p>
+</div>
+
 
 
 <dl class="param-type">
@@ -183,7 +305,10 @@
     </dt>
     <dd>
         
-<span class="param-type">SystemTriggerConfig</span>
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">null</span>
 
 
     </dd>
@@ -198,7 +323,7 @@
 
     
 
-    <h4 class="name" id="ruleEngineStarted"><span class="type-signature"></span>ruleEngineStarted<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
+    <h4 class="name" id=".replaceItemChannelLink"><span class="type-signature">(static) </span>replaceItemChannelLink<span class="signature">(itemOrName, channelUID, conf<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object|null}</span></h4>
 
     
 
@@ -210,7 +335,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line505">line 505</a>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line112">line 112</a>
     </li></ul></dd>
     
 
@@ -250,7 +375,7 @@
 
 
 <div class="description usertext">
-    <p>System trigger</p>
+    <p>Adds or updates a channel link of an Item.</p>
 </div>
 
 
@@ -261,6 +386,132 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>itemOrName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Item</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p><code>Item</code> or the name of the Item</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>channelUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>conf</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>channel configuration</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -280,6 +531,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>the old ItemChannelLink or <code>null</code> if it did not exist</p>
+</div>
+
 
 
 <dl class="param-type">
@@ -288,7 +543,10 @@
     </dt>
     <dd>
         
-<span class="param-type">SystemTriggerConfig</span>
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">null</span>
 
 
     </dd>
@@ -303,7 +561,7 @@
 
     
 
-    <h4 class="name" id="userInterfacesStarted"><span class="type-signature"></span>userInterfacesStarted<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
+    <h4 class="name" id=".removeItemChannelLink"><span class="type-signature">(static) </span>removeItemChannelLink<span class="signature">(itemOrName, channelUID)</span><span class="type-signature"> &rarr; {Object|null}</span></h4>
 
     
 
@@ -315,7 +573,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line514">line 514</a>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line131">line 131</a>
     </li></ul></dd>
     
 
@@ -355,7 +613,7 @@
 
 
 <div class="description usertext">
-    <p>System trigger</p>
+    <p>Removes a channel link from an Item.</p>
 </div>
 
 
@@ -366,6 +624,81 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>itemOrName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Item</span>
+|
+
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p><code>Item</code> or the name of the Item</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>channelUID</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -385,6 +718,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>the removed ItemChannelLink or <code>null</code> if none exists</p>
+</div>
+
 
 
 <dl class="param-type">
@@ -393,7 +730,10 @@
     </dt>
     <dd>
         
-<span class="param-type">SystemTriggerConfig</span>
+<span class="param-type">Object</span>
+|
+
+<span class="param-type">null</span>
 
 
     </dd>
@@ -408,7 +748,7 @@
 
     
 
-    <h4 class="name" id="thingsInitialized"><span class="type-signature"></span>thingsInitialized<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
+    <h4 class="name" id=".removeLinksForItem"><span class="type-signature">(static) </span>removeLinksForItem<span class="signature">(itemName)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
 
@@ -420,7 +760,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line523">line 523</a>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line150">line 150</a>
     </li></ul></dd>
     
 
@@ -460,7 +800,7 @@
 
 
 <div class="description usertext">
-    <p>System trigger</p>
+    <p>Removes all channel links from the given Item.</p>
 </div>
 
 
@@ -471,6 +811,55 @@
 
 
 
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>itemName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the name of the Item</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
 
 
 
@@ -490,6 +879,10 @@
 <h5>Returns:</h5>
 
         
+<div class="param-desc">
+    <p>number of links removed</p>
+</div>
+
 
 
 <dl class="param-type">
@@ -498,7 +891,7 @@
     </dt>
     <dd>
         
-<span class="param-type">SystemTriggerConfig</span>
+<span class="param-type">number</span>
 
 
     </dd>
@@ -513,7 +906,7 @@
 
     
 
-    <h4 class="name" id="startupComplete"><span class="type-signature"></span>startupComplete<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
+    <h4 class="name" id=".removeOrphanedItemChannelLinks"><span class="type-signature">(static) </span>removeOrphanedItemChannelLinks<span class="signature">()</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
 
@@ -525,7 +918,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line532">line 532</a>
+        <a href="items_metadata_itemchannellink.js.html">items/metadata/itemchannellink.js</a>, <a href="items_metadata_itemchannellink.js.html#line160">line 160</a>
     </li></ul></dd>
     
 
@@ -565,7 +958,7 @@
 
 
 <div class="description usertext">
-    <p>System trigger</p>
+    <p>Removes all orphaned (Item or channel missing) links.</p>
 </div>
 
 
@@ -595,120 +988,19 @@
 <h5>Returns:</h5>
 
         
-
-
-<dl class="param-type">
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type">SystemTriggerConfig</span>
-
-
-    </dd>
-</dl>
-
-    
-
-
-
-        
-            
-
-    
-
-    <h4 class="name" id="startLevel"><span class="type-signature"></span>startLevel<span class="signature">()</span><span class="type-signature"> &rarr; {SystemTriggerConfig}</span></h4>
-
-    
-
-
-
-
-<dl class="details">
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="rules_trigger-builder.js.html">rules/trigger-builder.js</a>, <a href="rules_trigger-builder.js.html#line541">line 541</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-<div class="description usertext">
-    <p>System trigger</p>
+<div class="param-desc">
+    <p>number of links removed</p>
 </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<h5>Returns:</h5>
-
-        
-
-
 <dl class="param-type">
     <dt>
         Type
     </dt>
     <dd>
         
-<span class="param-type">SystemTriggerConfig</span>
+<span class="param-type">number</span>
 
 
     </dd>
