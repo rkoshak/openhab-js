@@ -829,6 +829,31 @@ actions.Exec.executeCommandLine(time.Duration.ofSeconds(20), 'echo', 'Hello Worl
 
 See [JS-Joda](https://js-joda.github.io/js-joda/) for more examples and complete API usage.
 
+#### Formatting and Parsing
+
+Occasionally, one will need to format a date time differently from the default.
+The `time.DateTimeFormatter` class is used for this.
+See [JS-Joda Formatting/Parsing](https://js-joda.github.io/js-joda/manual/formatting.html) for the full docs.
+
+If you encounter any error while parsing or formatting complaining that the locale is missing, that means you need to install the locale and import it into the rule.
+Including all locales with the library expands the size of the library beyond acceptable limits so this must be done by the end users.
+See [JS-Joda Locales](https://github.com/js-joda/js-joda/tree/master/packages/locale#use-prebuilt-locale-packages) for the list of all supported locales.
+These can be installed using ``npm`` from the *$OPENHAB_CONF/automation/js* folder.
+The locale names follow the format "locale_*identifier*" where the identifier is the language and dialect: e.g. "en-us".
+
+For example, to install the German locale:
+
+```
+npm install @js-joda/local_de-de
+```
+
+Once installed, the locale can be imported and used with the `time.DateTimeFormatter` as follows:
+
+```javascript
+var Locale = require('@js-joda/locale_de-de').Locale.GERMAN;
+var formatter = time.DateTimeFormatter.ofPattern('MM/dd/yy HH:mm').withLocale(Locale);
+```
+
 #### `time.toZDT()`
 
 There will be times when this automatic conversion is not available (for example when working with date times within a rule).
